@@ -1,11 +1,9 @@
 package datastructure.zheda.tree;
 
-import datastructure.princeton.Queue;
-import datastructure.princeton.StackLinked;
-import datastructure.stack.Stack;
+import datastructure.princeton.queuetest.Queue;
+import datastructure.princeton.stacktest.StackLinked;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package datastructure.zheda.tree;
 
-import datastructure.princeton.Queue;
+import datastructure.princeton.queuetest.Queue;
 
 public class BinarySearchTree {
     private BstNode root;
@@ -62,6 +62,11 @@ public class BinarySearchTree {
         return null;
     }
 
+    /**
+     * 二叉搜索树中，查找最小值
+     * @param node
+     * @return 树的最小值
+     */
     public BstNode findMin(BstNode node) {
         if (node == null) {
             return null;
@@ -73,6 +78,11 @@ public class BinarySearchTree {
         }
     }
 
+    /**
+     * 查找二叉搜索树的最大值
+     * @param node
+     * @return 树的最大值
+     */
     public BstNode findMax(BstNode node) {
 //        while (node != null) {
 //            if (node.right == null) {
@@ -92,6 +102,12 @@ public class BinarySearchTree {
         return node;
     }
 
+    /**
+     * 在二叉搜索树中插入节点
+     * @param element
+     * @param node
+     * @return
+     */
     public BstNode insert(int element, BstNode node) {
         if (node == null) {
             node = new BstNode(element, 100);
@@ -106,6 +122,10 @@ public class BinarySearchTree {
 
     }
 
+    /**
+     * 层序遍历二叉树
+     * @param root
+     */
     void inorderRec(BstNode root) {
         Queue<BstNode> queue = new Queue<BstNode>();
         if (root != null) {

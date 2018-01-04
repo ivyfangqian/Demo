@@ -1,8 +1,7 @@
 package datastructure.princeton;
 
-import datastructure.StdIn;
-import datastructure.StdOut;
-import datastructure.StdRandom;
+import datastructure.utils.StdOut;
+import datastructure.utils.StdRandom;
 
 public class Counter implements Comparable<Counter> {
     private String name;
